@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  background-color: black;
+  padding: 20px 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.item {
+  padding: 10px;
+}
+
+.social-icon {
+  padding: 3px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  align-items: stretch;
+}
+
+.intro-cover {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  min-height: 15%;
+  background-image: url("./assets/intro-cover.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro-text {
+  color: black;
+  background-color: #E7FF09;
+  width: 50vw;
+  padding: 165px;
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+.intro-text .wrapper, .orphans-text .wrapper {
+  max-width: 445px;
+}
+
+.intro-text span {
+  color: #F35276;
+}
+
+.intro-text h1 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 85px;
+  line-height: 72px;
+  letter-spacing: -0.065em;
+  margin: 12px 0 24px 0;
+}
+
+.intro-text p {
+  font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 22px;
+}
+
+.keyImage {
+  display: flex;
+  overflow: hidden;
+}
+
+.orphans {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+
+}
+
+.orphans-text {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  width: 50vw;
+  padding: 165px;
+  flex: 1;
+}
+
+.orphans-text p {
+  margin: 20px 0;
+}
+
+.orphans-thumbs img {
+  margin: 165px 80px 0 10px;
+}
+
+
+/*Mobile Menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+}
+
+/*Tablet Menu*/
+@media all and (min-width: 700px) 
+{
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+}
+
+/*Desktop Menu*/
+@media all and (min-width: 960px) 
+{
+  .menu {
+    align-items: center;
+    flex-wrap: nowrap;
+    background: none;
+    justify-content: space-around;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+}

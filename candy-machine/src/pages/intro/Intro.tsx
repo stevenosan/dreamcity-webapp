@@ -1,6 +1,6 @@
 
 
-function App() {
+function Intro() {
     return (
         <div id="intro-section" className="intro wf-section">
         <div className="columns w-row">
@@ -16,5 +16,5 @@ function App() {
     );
   }
   
-  export default App;
+  export default Intro;
   

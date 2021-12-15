@@ -1,6 +1,6 @@
 
 
-function App() {
+function NavBar() {
   return (
     <div className="navigation wf-section">
     <a href="#intro-section" className="w-inline-block"><img src="images/DreamCityLogo.png" loading="lazy" alt="" className="image" /></a>
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default NavBar;

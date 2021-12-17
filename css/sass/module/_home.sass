@@ -1,0 +1,42 @@
+// Home
+.intro
+  +flexbox
+
+  .columns
+    +flex-direction(row)
+    +flex-wrap(wrap)
+
+    .intro-column
+      +flexbox
+      +justify-content(center)
+      +align-items(center)
+      background-color: $secondary
+      padding: 150px 0
+      width: 50%
+
+      p
+        +font-size(14)
+        line-height: 1.5em
+
+    .intro-image
+      +flexbox
+      +align-items(start)
+      +flex(1)
+      width: 50%
+      overflow: hidden
+
+      .hero-image
+        +align-self(stretch)
+        +flex(1)
+        height: 100%
+        object-fit: cover
+        max-width: 100%
+
+  .intro-copy
+    +flexbox
+    +flex-direction(column)
+    +justify-content(center)
+    +align-items(start)
+    +align-self(center)
+    max-width: 60%
+    min-width: 55%

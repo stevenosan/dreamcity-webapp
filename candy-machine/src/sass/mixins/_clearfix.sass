@@ -1,0 +1,39 @@
+@mixin vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+@mixin box-sizing($box-model)
+  -webkit-box-sizing: $box-model
+  -moz-box-sizing: $box-model
+  box-sizing: $box-model
+
+@mixin text-shadow($color, $horizOffset, $vertOffset, $blur)
+  -webkit-text-shadow: $color $horizOffset $vertOffset $blur
+  -moz-text-shadow: $color $horizOffset $vertOffset $blur
+  -ms-text-shadow: $color $horizOffset $vertOffset $blur /* IE 10+ */
+  -o-text-shadow: $color $horizOffset $vertOffset $blur
+  text-shadow: $color $horizOffset $vertOffset $blur
+
+@mixin opacity($opacity)
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity=$opacity-ie)
+
+@mixin clearfix
+  &:after
+    content: " "
+    display: table
+    clear: both
+
+@mixin hide-text
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+
+@mixin appearance($appearance)
+  -webkit-appearance: $appearance
+  -moz-appearance: $appearance
+  appearance: $appearance

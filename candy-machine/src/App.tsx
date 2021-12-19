@@ -8,7 +8,7 @@ import Faqs from './pages/faqs/Faqs';
 
 function App() {
   return (
-    <div className="App">
+    <div className="wrapper">
       <NavBar />
       <Intro />
       <Orphans />

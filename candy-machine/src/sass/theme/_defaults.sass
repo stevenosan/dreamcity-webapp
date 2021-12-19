@@ -1,0 +1,54 @@
+// Base
+
+html, body
+  height: 100%
+
+body
+  color: $black_80
+  font-family: $sans_serif_family
+  font-size: 100%/1.5
+  font-weight: 500
+  text-rendering: optimizeLegibility
+
+hr
+  background-color: $black_5
+  border-style: none
+  border: none
+  height: 2px
+  max-width: 1280px
+  width: 100%
+
+::selection
+  background: $primary
+  color: #ffffff
+  text-shadow: none
+
+::-webkit-selection
+  background: $primary
+  color: #ffffff
+  text-shadow: none
+
+::-moz-selection
+  background: $primary
+  color: #ffffff
+  text-shadow: none
+
+// CSS3 Global Animation
+
+a,
+header,
+figure img,
+figure figcaption,
+ul li,
+article, home
+  +transition(all .2s ease-in-out)
+
+main
+  width: 100%
+
+  section
+    margin: 0 auto
+
+    article
+      display: contents
+      margin: 0 0 48px 0

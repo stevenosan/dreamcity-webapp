@@ -1,4 +1,4 @@
-import './App.css';
+import './App.sass';
 import NavBar from './pages/navbar/NavBar'
 import Intro from './pages/intro/Intro'
 import Orphans from './pages/orphans/Orphans';
@@ -8,14 +8,14 @@ import Faqs from './pages/faqs/Faqs';
 
 function App() {
   return (
-    <div className="wrapper">
+    <main>
       <NavBar />
       <Intro />
       <Orphans />
       <Roadmap />
       <OurTeam />
       <Faqs />
-    </div>
+    </main>
   );
 }
 

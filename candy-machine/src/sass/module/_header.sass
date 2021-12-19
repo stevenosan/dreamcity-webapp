@@ -1,22 +1,23 @@
+@import '../mixins/clearfix'
+@import '../mixins/rem_font'
+@import '../vars/variables'
+@import '../mixins/flexbox'
+
 // Navigation
 nav
   &.navigation
-    position: -webkit-sticky
+    +align-content(flex-start)
+    +align-items(center)
+    +flexbox
+    background-color: $black_80
+    padding: 10px 20px
     position: sticky
     top: 0px
     z-index: 100
-    display: -webkit-box
-    display: -webkit-flex
-    display: -ms-flexbox
-    display: flex
-    padding: 10px 20px
-    justify-content: flex-start
-    align-items: center
-    background-color: #000
 
     .logo
       +hide-text
-      background-image: url('../images/dc_svg.svg')
+      background-image: url('../../images/dc_svg.svg')
       background-position: center
       background-repeat: no-repeat
       background-size: 220px
@@ -25,12 +26,9 @@ nav
       width: 220px
 
     .main-nav
-      display: -webkit-box
-      display: -webkit-flex
-      display: -ms-flexbox
-      display: flex
-      justify-content: flex-end
-      align-items: center
+      +flexbox
+      +justify-content(flex-end)
+      +align-items(center)
       order: 1
 
       .nav-item
@@ -44,8 +42,8 @@ nav
           text-decoration: none
 
           &:hover
-            text-decoration: underline
             color: $primary
+            text-decoration: underline
 
   .social
     order: 1
@@ -66,7 +64,7 @@ nav
       order: 1
 
       &.twitter
-        background-image: url('../images/twitter.svg')
+        background-image: url('../../images/twitter.svg')
 
       &.discord
-        background-image: url('../images/discord.svg')
+        background-image: url('../../images/discord.svg')

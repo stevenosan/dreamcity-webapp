@@ -22,7 +22,7 @@ function Roadmap() {
         <div className="rows">
           <img src="images/P1_Icon.svg" loading="lazy" alt="" className="phase" />
           <div className="roadmap-text">
-            <h3>Pre-Launch 0.1</h3>
+            <h3>Phase 1.0</h3>
             <ul>
               <li>Minting // The Orphans</li>
               <li>Continue Lore Drops</li>

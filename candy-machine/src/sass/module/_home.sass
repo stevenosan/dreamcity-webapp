@@ -30,6 +30,9 @@ section
     +align-items(stretch)
     +align-content(flex-start)
 
+    @media (max-width: $layout-breakpoint-small)
+      +flex-direction(column-reverse)
+
     &.reverse
       +flex-direction(row-reverse)
 
@@ -37,22 +40,37 @@ section
       +align-items(center)
       +flexbox
       +justify-content(center)
-      padding: 128px 0
+      box-sizing: border-box
+      margin: 0
+      padding: 96px
       width: 50%
+
+      @media (max-width: $layout-breakpoint-medium)
+        padding: 48px 24px
+
+      @media (max-width: $layout-breakpoint-small)
+        width: 100%
 
       &.hero
         background-color: $secondary
 
       .copy
-        +align-items(center)
+        +align-items(start)
         +align-self(center)
         +flex-direction(column)
         +flexbox
         +justify-content(center)
-        padding: 128px
+        box-sizing: border-box
+        padding: 96px 0
+
+        @media (max-width: $layout-breakpoint-medium)
+          padding: 0
 
         img
           padding-bottom: 32px
+
+          @media (max-width: $layout-breakpoint-medium)
+            max-width: 65%
 
         p
           +font-size(14)
@@ -65,9 +83,15 @@ section
       overflow: hidden
       width: 50%
 
+      @media (max-width: $layout-breakpoint-small)
+        width: 100%
+
       &.image img
         box-sizing: border-box
         padding: 64px
+
+        @media (max-width: $layout-breakpoint-medium)
+          padding: 24px
 
       .hero-image
         +align-items(center)
@@ -87,6 +111,9 @@ section
     background-color: $primary
     color: $white
     padding: 64px 128px
+
+    @media (max-width: $layout-breakpoint-medium)
+      padding: 48px 24px
 
     h3
       border-bottom: 1px solid $white
@@ -112,6 +139,9 @@ section
         margin: 0
         padding: 0
 
+        @media (max-width: $layout-breakpoint-small)
+          column-count: 1
+
         li
           margin: 0
           padding: 0 0 8px 0
@@ -127,16 +157,24 @@ section
     color: $black_80
 
     .rows
-      +inline-flex
-      gap: 24px
+      +flexbox
+      +flex-wrap(wrap)
+      +justify-content(space-between)
 
     h2
       color: $black_80
 
     .team-member
       box-sizing: border-box
+      margin-bottom: 16px
       position: relative
-      width: 25%
+      width: calc(1/4*100% - (1 - 1/4)*24px)
+
+      @media (max-width: $layout-breakpoint-medium)
+        width: calc(1/2*100% - (1 - 1/2)*24px)
+
+      @media (max-width: $layout-breakpoint-small)
+        width: 100%
 
       img
         width: 100%
@@ -172,17 +210,20 @@ section
     color: $black_80
 
     .rows
-      +inline-flex
-      border-bottom: 1px solid $black_80
-      gap: 24px
-
-      &:first-child
-        border: none
+      +flex-wrap(wrap)
+      +justify-content(space-between)
 
       .faq-item
         +font-size(14)
-        padding-bottom: 24px
-        width: 33%
+        margin-bottom: 48px
+        width: calc(1/3*100% - (1 - 1/3)*24px)
+        border-bottom: 1px solid $black_80
+
+        @media (max-width: $layout-breakpoint-medium)
+          width: calc(1/2*100% - (1 - 1/2)*24px)
+
+        @media (max-width: $layout-breakpoint-small)
+          width: 100%
 
         h4
           margin-bottom: 8px
@@ -193,3 +234,6 @@ section
 
     h2
       color: $black_80
+
+section.orphans .columns .left-column .copy
+  +align-items(center)

@@ -6,11 +6,11 @@
 // Navigation
 nav
   &.navigation
-    +align-content(flex-start)
     +align-items(center)
     +flexbox
     background-color: $black_80
-    padding: 10px 20px
+    box-sizing: border-box
+    height: 96px
     position: sticky
     top: 0px
     z-index: 100
@@ -23,19 +23,36 @@ nav
       background-size: 220px
       display: inline-block
       height: 80px
+      margin-right: 24px
       width: 220px
 
     .main-nav
+      +align-items(center)
       +flexbox
       +justify-content(flex-end)
-      +align-items(center)
+      box-sizing: border-box
+      margin: 0
       order: 1
+      padding: 0
+
+      @media (max-width: $layout-breakpoint-small)
+        background-color: $black_80
+        display: none
+        margin: 0
+        padding: 24px
+        position: absolute
+        top: 96px
+        width: 100%
 
       .nav-item
         +font-size(16)
         display: block
         font-weight: 700
-        padding-right: 40px
+        padding-right: 24px
+
+        @media (max-width: $layout-breakpoint-small)
+          padding: 0
+          text-align: right
 
         .list-link
           color: $white
@@ -48,6 +65,7 @@ nav
   .social
     order: 1
     padding: 0
+    margin-left: auto
 
     li
       display: inline-block

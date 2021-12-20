@@ -20,21 +20,37 @@ form, input, textarea, submit
 h1, h2, h3, h4, h5, h6, strong
   font-family: $sans_serif_family
   font-weight: 900
-  margin: 0 0 24px 0
+  margin: 0
   padding: 0
 
 // Headers
 
 h1
-  +font-size(85)
+  +font-size(84)
   line-height: 4.5rem
   text-transform: uppercase
+
+  @media (max-width: $layout-breakpoint-medium)
+    +font-size(56)
+    line-height: 3.5rem
 
 h2
   +font-size(32)
 
+  @media (max-width: $layout-breakpoint-medium)
+    +font-size(24)
+
+  @media (max-width: $layout-breakpoint-small)
+    +font-size(18)
+
 h3
   +font-size(24)
+
+  @media (max-width: $layout-breakpoint-medium)
+    +font-size(18)
+
+  @media (max-width: $layout-breakpoint-small)
+    +font-size(16)
 
 h4
   +font-size(14)

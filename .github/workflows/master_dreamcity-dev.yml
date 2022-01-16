@@ -30,9 +30,8 @@ jobs:
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
-        working-directory: ./app
         with:
-          name: build
+          name: ./app/build
           path: build/
 
   deploy:

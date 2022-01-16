@@ -38,11 +38,17 @@ jobs:
           npm run build --if-present
           npx webpack
 
-      - name: Upload artifact for deployment job
+      - name: Upload main app artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
           path: ./app/build/
+
+      - name: Upload candy-machine artifact for deployment job
+        uses: actions/upload-artifact@v2
+        with:
+          name: candy-machine-app
+          path: ./candy-machine/build/
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,12 +58,17 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-      - name: Download artifact from build job
+      - name: Download main app artifact from build job
         uses: actions/download-artifact@v2
         with:
           name: node-app
 
-      - name: 'Deploy to Azure Web App'
+      - name: Download candy-machine app artifact from build job
+        uses: actions/download-artifact@v2
+        with:
+          name: candy-machine-app
+
+      - name: 'Deploy to Azure Main Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
@@ -65,3 +76,13 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B7F7DA3738CA436EB51A8DC8EB0EE7BD }}
           package: .
+
+      - name: 'Deploy to Azure Candy Machine Wallet Web App'
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'candy-machine-dev'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.PUBLISHPROFILE_CANDYMACHINE }}
+          package: .
+

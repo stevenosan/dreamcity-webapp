@@ -55,4 +55,4 @@ jobs:
           app-name: 'dreamcity-dev'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B7F7DA3738CA436EB51A8DC8EB0EE7BD }}
-          package: build
+          package: node-app

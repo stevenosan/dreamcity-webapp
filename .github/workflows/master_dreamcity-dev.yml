@@ -21,13 +21,22 @@ jobs:
         with:
           node-version: '14.7.0'
 
-      - name: npm install, build, and test
+      - name: npm install, build, and test dreamcity app
         working-directory: ./app
         env:
           CI: false
         run: |
           npm install
           npm run build --if-present
+
+      - name: npm install, build, and webpack candy machine app
+        working-directory: ./app
+        env:
+          CI: false
+        run: |
+          npm install
+          npm run build --if-present
+          npx webpack
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2

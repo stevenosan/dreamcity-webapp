@@ -4,7 +4,7 @@ import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
+    candymachine: {
       display: 'flex',
       padding: theme.spacing(0),
       '& > *': {
@@ -79,7 +79,7 @@ export const MintCountdown: React.FC<MintCountdownProps> = ({
       return status ? <span className={classes.done}>{status}</span> : null;
     } else {
       return (
-        <div className={classes.root} style={style}>
+        <div className={classes.candymachine} style={style}>
           <Paper elevation={0}>
             <span className={classes.item}>
               {hours < 10 ? `0${hours}` : hours}

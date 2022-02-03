@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Production'
+      name: 'Develop'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -54,5 +54,5 @@ jobs:
         with:
           app-name: 'dreamcity-dev'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B7F7DA3738CA436EB51A8DC8EB0EE7BD }}
+          publish-profile: ${{ secrets.DREAMCITY_APP_PUBLISH_PROFILE }}
           package: .

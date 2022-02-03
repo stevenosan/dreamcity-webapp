@@ -6,7 +6,7 @@ name: Build and deploy candy-machine
 on:
   push:
     branches:
-      - master
+      - develop
   workflow_dispatch:
 
 jobs:

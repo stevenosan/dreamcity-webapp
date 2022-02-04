@@ -52,7 +52,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'dreamcity-dev'
+          app-name: 'dreamcity-prod'
           slot-name: 'Production'
           publish-profile: ${{ secrets.DREAMCITY_APP_PUBLISH_PROFILE }}
           package: .

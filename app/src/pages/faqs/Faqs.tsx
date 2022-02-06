@@ -9,47 +9,47 @@ function Faqs() {
               <div className="rows">
                 <div className="faq-item">
                   <h4>What is Dream City?</h4>
-                  <p>Dream City is an NFT brand powered by the Solana blockchain.</p>
+                  <p>Dream City is an NFT project and brand launching on Solana and using Metaplex's CandyMachine for minting.</p>
                 </div>
                 <div className="faq-item">
-                  <h4>When is the sale/drop date?</h4>
-                  <p>Currently we’re hard at work getting everything running. Follow us on Twitter or join our Discord to be up-to-date on all information.</p>
+                  <h4>What day are you minting?</h4>
+                  <p>February 22nd, 2022. Exact time TBA.</p>
+                </div>
+                <div className="faq-item">
+                  <h4>What is the total supply?</h4>
+                  <p>2222 Unique Orphans.</p>
+                </div>
+                <div className="faq-item">
+                  <h4>Wen Whitelist?</h4>
+                  <p>We're currently accepting DAO applications and awarding active community members. Join our discord to get started.</p>
                 </div>
                 <div className="faq-item">
                   <h4>How many traits in Dream City?</h4>
                   <p>The first edition of The Orphans will contain over 100 traits such as masks, tattoos, eyes, clothing, and more.</p>
                 </div>
                 <div className="faq-item">
-                  <h4>When will the full website launch?</h4>
-                  <p>Official launch will be posted on Twitter and Discord as we continue to build out Dream City.</p>
-                </div>
-                <div className="faq-item">
                   <h4>How can I reach the team?</h4>
-                  <p>Most suggestions can be dropped in Discord under “Ideas and Feedback”. For other inquiry DM on Twitter.</p>
+                  <p>Drop into our discord and join the community. For other inquiry DM on Twitter.</p>
                 </div>
                 <div className="faq-item">
-                  <h4>How to buy a Dream City NFT?</h4>
-                  <p>Official launch details will be provided through this website, Twitter, and Discord.</p>
+                  <h4>How do I buy an Orphan?</h4>
+                  <p>We will provide a mint link in our Discord as an official Announcement. You will need a Solana Wallet and some SOL to make the purchase.</p>
                 </div>
                 <div className="faq-item">
                   <h4>Will there be an aftermarket?</h4>
-                  <p>TBD</p>
+                  <p>Yes. Currently we're only focused on launching on Magic Eden after minting.</p>
                 </div>
                 <div className="faq-item">
                   <h4>How much is an Orphan?</h4>
-                  <p>TBD</p>
+                  <p>TBA closer to minting.</p>
                 </div>
                 <div className="faq-item">
                   <h4>Where can I see my purchases?</h4>
-                  <p>You can view them directly within Phantom wallet’s Collectible tab.</p>
+                  <p>You can view them directly within your Solana Wallet. We recommend <a href="https://phantom.app">Phantom</a> but others will work.</p>
                 </div>
                 <div className="faq-item">
                   <h4>How do I create a Phantom Wallet?</h4>
-                  <p>Go to phantom.app, download the Phantom Wallet extension. Once installed run the program to create a new wallet.</p>
-                </div>
-                <div className="faq-item">
-                  <h4>What blockchain does Dream City utilize?</h4>
-                  <p>Dream City will be exclusive to the Solana Blockchain.</p>
+                  <p>Go to phantom.app, download the Phantom Wallet extension. Once installed run the extension to create a new wallet.</p>
                 </div>
                 <div className="faq-item">
                   <h4>Where is the digital artwork stored?</h4>
@@ -57,11 +57,11 @@ function Faqs() {
                 </div>
                 <div className="faq-item">
                   <h4>Will there be resale royalties?</h4>
-                  <p>Yes, the right percentage is being determined.</p>
+                  <p>Yes. Royalties will be split amongst the team and a large majority will be placed in a treasury wallet for reinvesting into Dream City.</p>
                 </div>
                 <div className="faq-item">
                   <h4>Will you be giving to charity?</h4>
-                  <p>Yes, we’re currently going through the selection process with the team. Details will come soon.</p>
+                  <p>Yes, we’re currently going through the selection process with the team. Have a charity in mind? Let us know in our Discord.</p>
                 </div>
               </div>
           </section>

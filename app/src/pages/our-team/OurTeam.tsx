@@ -8,31 +8,51 @@ function OurTeam() {
           </div>
             <div className="rows">
               <div className="team-member">
-                <img src="images/214.png" loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 767px) 245px, (max-width: 991px) 300px, 14vw" srcSet="images/214-p-500.png 500w, images/214.png 800w" alt="" />
-                <div className="team-dox">
-                  <p className="team-name">Brandon Mullins</p>
-                  <p className="team-position">Founder / Art / Design / Dev</p>
-                </div>
+                <a href="https://twitter.com/wakeupbrandon" target="_blank">
+                  <img src="images/brandon-dc-art.png" alt="" />
+                  <div className="team-dox">
+                    <p className="team-name">Brandon Mullins</p>
+                    <p className="team-position">Founder / Art / Design / Dev</p>
+                  </div>
+                </a>
               </div>
               <div className="team-member">
-                <img src="images/121.png" loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 767px) 245px, (max-width: 991px) 300px, 14vw" srcSet="images/121-p-500.png 500w, images/121.png 800w" alt="" />
-                <div className="team-dox">
-                  <p className="team-name">Matt Cook</p>
-                  <p className="team-position">Core - Community Engagement</p>
-                </div>
-              </div>
-              <div className="team-member">
-                <img src="images/78.png" loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 767px) 245px, (max-width: 991px) 300px, 14vw" srcSet="images/78-p-500.png 500w, images/78.png 800w" alt="" />
+                <img src="images/michelle-dc-lore.png" alt="" />
                 <div className="team-dox">
                   <p className="team-name">Michelle Amos</p>
-                  <p className="team-position">Core - Lore Master</p>
+                  <p className="team-position">Lore Master</p>
                 </div>
               </div>
               <div className="team-member">
-                <img src="images/11.png" loading="lazy" sizes="(max-width: 479px) 83vw, (max-width: 767px) 245px, (max-width: 991px) 300px, 14vw" srcSet="images/11-p-500.png 500w, images/11.png 800w" alt="" />
+                <a href="https://twitter.com/dreamcitynft" target="_blank">
+                  <img src="images/matt-dc-marketing.png" alt="" />
+                  <div className="team-dox">
+                    <p className="team-name">Matt Cook</p>
+                    <p className="team-position">Community Engagement</p>
+                  </div>
+                </a>
+              </div>
+              <div className="team-member">
+                <a href="https://twitter.com/empirikal" target="_blank">
+                  <img src="images/carl-dc-partnerships.png" alt="" />
+                  <div className="team-dox">
+                    <p className="team-name">Carl DeCaire</p>
+                    <p className="team-position">Partnerships / Advisor</p>
+                  </div>
+                </a>
+              </div>
+              <div className="team-member">
+                <img src="images/steve-dc-engineer.png" alt="" />
                 <div className="team-dox">
-                  <p className="team-name">Carl DeCaire</p>
-                  <p className="team-position">Contributor - Research / Advisor</p>
+                  <p className="team-name">Steve Nosan</p>
+                  <p className="team-position">Engineer</p>
+                </div>
+              </div>
+              <div className="team-member">
+                <img src="images/joe-dc-moderator.png" alt="" />
+                <div className="team-dox">
+                  <p className="team-name">Joe Santavicca</p>
+                  <p className="team-position">Community Moderator</p>
                 </div>
               </div>
             </div>

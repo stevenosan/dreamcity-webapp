@@ -13,9 +13,16 @@ function Roadmap() {
             <ul>
               <li className="completed">Setup Social and Discord</li>
               <li className="completed">Community Building</li>
+              <li className="completed">DAO Recruitment & Whitelists</li>
               <li className="completed">Season &amp; Lore Planning</li>
-              <li className="completed">Create Website</li>
-              <li>Contact Secondary Marketplaces</li>
+              <li className="completed">Founders Day Prologue</li>
+              <li className="completed">Website Updates</li>
+              <li className="completed">CandyMachine Setup / Preflight</li>
+              <li className="completed">Whitelist Token Creation</li>
+              <li className="completed">Free iPhone Background</li>
+              <li className="completed">PFP/Comic Sneak Peeks</li>
+              <li className="completed">Public Team Meetings</li>
+              <li className="completed">Team DOX</li>
             </ul>
           </div>
         </div>
@@ -24,10 +31,16 @@ function Roadmap() {
           <div className="roadmap-text">
             <h3>Phase 1.0</h3>
             <ul>
-              <li>Minting // The Orphans</li>
-              <li>Continue Lore Drops</li>
-              <li>Website Updates</li>
-              <li>Sell on Secondary Marketplaces</li>
+              <li>Minting 2222 Unique Orphans</li>
+              <li>Secondary Marketplace Listing</li>
+              <li>New Lore Drops</li>
+              <li>New Comics</li>
+              <li>Additional Website Updates</li>
+              <li>Holder Verification (Matrica)</li>
+              <li>Official DAO Launch</li>
+              <li>1 of 1 Auction For Holders</li>
+              <li>Degenizens Rewards Airdrop</li>
+              <li>Phase 2.0 Roadmap Planning</li>
             </ul>
           </div>
         </div>

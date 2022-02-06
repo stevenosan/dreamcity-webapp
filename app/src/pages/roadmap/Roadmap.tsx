@@ -7,7 +7,7 @@ function Roadmap() {
           <h2>// The Roadmap</h2>
         </div>
         <div className="rows">
-          <img src="images/P0_Icon.svg" loading="lazy" alt="" className="phase" />
+          <img src="images/P0_Icon.svg" className="phase" />
           <div className="roadmap-text">
             <h3>Pre-Launch 0.1</h3>
             <ul>

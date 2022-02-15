@@ -1,0 +1,40 @@
+@import '../mixins/flexbox'
+@import '../vars/variables'
+@import '../mixins/rem_font'
+
+// process
+#process-section
+  .columns
+    .left-column
+      .copy
+        ul
+          column-count: 2
+          list-style: none
+          margin: 24px 0
+          padding: 0
+
+          @media (max-width: $layout-breakpoint-small)
+            column-count: 1
+
+          li
+            list-style: none
+            margin-bottom: 24px
+            min-height: 140px
+
+            @media (max-width: $layout-breakpoint-small)
+              min-height: auto
+              margin-bottom: 48px
+
+            h3
+              +font-size(16)
+              font-weight: 900
+              margin-bottom: 16px
+              text-transform: uppercase
+
+    .right-column
+      @media (max-width: $layout-breakpoint-small)
+        margin-top: 0
+
+        img
+          width: 100%
+          padding: 24px

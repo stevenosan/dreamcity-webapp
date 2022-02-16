@@ -44,6 +44,8 @@ function OurTeam() {
               <figcaption>
                 <p className="team-name">Matt Cook</p>
                 <p className="team-position">Community Engagement</p>
+                Matt has been in the social media marketing field for 12 years. In that time, he’s become an adept social media copywriter and content producer for a couple, much-loved local brands here in Ohio. Fun Fact: He was the first of all his friends to create an NFT.
+                <a href="https://twitter.com/wealldroneon" target="_blank">@wealldroneon</a>
               </figcaption>
             </figure>
           </div>
@@ -72,6 +74,7 @@ function OurTeam() {
               <figcaption>
                 <p className="team-name">Steve Nosan</p>
                 <p className="team-position">Engineer</p>
+                Steve has been in the software engineering field for over a decade, with a wide set of skills ranging from web dev, cloud architecture, to IoT. If it involves software, he's probably done it.
               </figcaption>
             </figure>
           </div>

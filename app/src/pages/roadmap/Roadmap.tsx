@@ -5,7 +5,7 @@ function Roadmap() {
       <section id="roadmap-section" className="roadmap">
         <h2>The Roadmap</h2>
         <div className="rows">
-          Litepaper Coming Soon!
+          <a href="images/Dream_City_Lite_Paper.pdf" target="_blank">Read our Litepaper (Working Draft)</a>
         </div>
         <h2>Phases</h2>
         <div className="rows">

@@ -3,33 +3,34 @@
 function Roadmap() {
     return (
       <section id="roadmap-section" className="roadmap">
+        <h2>The Roadmap</h2>
         <div className="rows">
-          <h2>// The Roadmap</h2>
+          <a href="images/Dream_City_Lite_Paper.pdf" target="_blank">Read our Litepaper (Working Draft)</a>
         </div>
+        <h2>Phases</h2>
         <div className="rows">
-          <img src="images/P0_Icon.svg" loading="lazy" alt="" className="phase" />
+          <img src="images/P0_Icon.svg" className="phase" />
           <div className="roadmap-text">
-            <h3>Pre-Launch 0.1</h3>
             <ul>
               <li className="completed">Setup Social and Discord</li>
               <li className="completed">Community Building</li>
               <li className="completed">DAO Recruitment & Whitelists</li>
               <li className="completed">Season &amp; Lore Planning</li>
-              <li className="completed">Founders Day Prologue</li>
+              <li className="completed"><a href="https://cdn.discordapp.com/attachments/921808669312696341/938854899041574912/00_DC_Prologue_WV.png" target="_blank">Founders Day Prologue</a></li>
               <li className="completed">Website Updates</li>
               <li className="completed">CandyMachine Setup / Preflight</li>
               <li className="completed">Whitelist Token Creation</li>
-              <li className="completed">Free iPhone Background</li>
+              <li className="completed"><a href="images/fkd.jpeg" target="_blank">Free iPhone Background</a></li>
               <li className="completed">PFP/Comic Sneak Peeks</li>
               <li className="completed">Public Team Meetings</li>
               <li className="completed">Team DOX</li>
+              <li className="completed"><a href="https://app.radrugs.io/">RadRugs Certified</a></li>
             </ul>
           </div>
         </div>
         <div className="rows">
           <img src="images/P1_Icon.svg" loading="lazy" alt="" className="phase" />
           <div className="roadmap-text">
-            <h3>Phase 1.0</h3>
             <ul>
               <li>Minting 2222 Unique Orphans</li>
               <li>Secondary Marketplace Listing</li>

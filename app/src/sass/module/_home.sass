@@ -3,91 +3,46 @@
 @import '../mixins/rem_font'
 
 // Home
-section
-  +flex(1)
-  +flex-direction(column)
-  +flexbox
+#intro-section
+  border: none
+  margin-bottom: 0
 
-  .rows
-    +align-content(flex-start)
-    +align-items(flex-start)
-    +flex-direction(row)
-    +flex-wrap(no-wrap)
-    +flexbox
-    +justify-content(flex-start)
-    margin-bottom: 48px
-
-    h2, h3
-      color: $white
-      width: 100%
-
-    h2
-      margin-bottom: 0
+  @media (max-width: $layout-breakpoint-small)
+    padding-bottom: 0
 
   .columns
-    +flexbox
-    +justify-content(flex-start)
-    +align-items(stretch)
-    +align-content(flex-start)
-
     @media (max-width: $layout-breakpoint-small)
-      +flex-direction(column-reverse)
-
-    &.reverse
-      +flex-direction(row-reverse)
-
-      @media (max-width: $layout-breakpoint-small)
-        +flex-direction(column-reverse)
+      +flex-direction(reverse)
 
     .left-column
-      +align-items(center)
-      +flexbox
-      +justify-content(center)
-      box-sizing: border-box
-      margin: 0
-      padding: 96px
-      width: 50%
+      width: 70%
 
       @media (max-width: $layout-breakpoint-medium)
-        padding: 48px 24px
+        width: 100%
+        padding: 24px 24px
 
       @media (max-width: $layout-breakpoint-small)
         width: 100%
+
+      h1
+        @media (max-width: $layout-breakpoint-small)
+          margin-top: 24px
 
       &.hero
-        background-color: $secondary
+        background-color: $tertiary
 
-      .copy
-        +align-items(start)
-        +align-self(center)
-        +flex-direction(column)
-        +flexbox
-        +justify-content(center)
-        box-sizing: border-box
-        padding: 96px 0
-
-        @media (max-width: $layout-breakpoint-medium)
-          padding: 0
-
-        img
-          padding-bottom: 32px
-
-          @media (max-width: $layout-breakpoint-medium)
-            max-width: 65%
-
-        p
-          +font-size(16)
-          line-height: 1.5em
+        .copy
+          color: $white
 
     .right-column
-      +align-items(start)
-      +flex(1)
-      +flexbox
-      overflow: hidden
-      width: 50%
+      width: 30%
+
+      @media (max-width: $layout-breakpoint-medium)
+        width: 100%
 
       @media (max-width: $layout-breakpoint-small)
-        width: 100%
+        max-height: 400px
+        +align-items(flex-start)
 
       &.image img
         box-sizing: border-box
@@ -97,156 +52,40 @@ section
           padding: 24px
 
       .hero-image
-        +align-items(center)
         +flex(1)
         height: 100%
-        max-width: 100%
+        width: auto
         object-fit: cover
 
-      .image
-        +align-self(center)
-        +flex(1)
-        height: auto
-        object-fit: contain
-        width: 100%
-
-  &.roadmap, &.team, &.faq
-    background-color: $primary
-    color: $white
-    padding: 64px 128px
-
-    @media (max-width: $layout-breakpoint-medium)
-      padding: 48px 24px
-
-    h3
-      border-bottom: 1px solid $white
-      padding-bottom: 8px
-
-    p
-      +font-size(16)
-      max-width: 740px
-      min-width: 50%
-
-    .phase
-      width: 96px
-
-    .roadmap-text
-      +font-size(16)
-      box-sizing: border-box
-      padding-left: 24px
-      width: 100%
-
-      ul
-        column-count: 2
-        list-style: none
-        margin: 24px 0
-        padding: 0
-
-        @media (max-width: $layout-breakpoint-small)
-          column-count: 1
-
-        li
-          margin: 0
-          padding: 0 0 8px 0
-
-          &::before
-            content: ''
-            background-image: url(../../images/minus.svg)
-            background-size: 16px auto
-            background-repeat: no-repeat
-            display: inline-block
-            height: 16px
-            margin-right: 4px
-            width: 16px
-            vertical-align: middle
-
-          &.completed::before
-            background-image: url(../../images/check.svg)
-
-  &.team
-    background-color: $tertiary
-    color: $black_80
-
-    .rows
-      +flexbox
-      +flex-wrap(wrap)
-      +justify-content(space-between)
-
-    h2
-      color: $black_80
-
-    .team-member
-      box-sizing: border-box
-      margin-bottom: 16px
-      position: relative
-      width: calc(1/3*100% - (1 - 1/3)*24px)
-
-      @media (max-width: $layout-breakpoint-medium)
-        width: calc(1/2*100% - (1 - 1/2)*24px)
-
-      @media (max-width: $layout-breakpoint-small)
-        width: 100%
-
-      img
-        width: 100%
-        height: auto
-
-      .team-dox
-        bottom: 0
-        box-sizing: border-box
-        padding: 8px
-        position: absolute
-        width: 100%
-
-        p
-         width: 100%
-         margin: 0
-         padding: 0
-
-        .team-name
-          +font-size(16)
-          color: $white
-          font-weight: 700
-          line-height: 1.25em
-
-        .team-position
-          +font-size(16)
-          bottom: 12px
-          color: $tertiary
-          font-weight: 700
-          line-height: 1.25em
-
-  &.faq
-    background-color: $secondary
-    color: $black_80
-
-    .rows
-      +flex-wrap(wrap)
-      +justify-content(flex-start)
-      gap: 24px
-
-      .faq-item
-        +font-size(16)
-        border-bottom: 1px solid $black_80
-        margin: 0 0 48px 0
-        min-height: 180px
-        width: calc(1/3*100% - (1 - 1/3)*24px)
-
         @media (max-width: $layout-breakpoint-medium)
-          width: calc(1/2*100% - (1 - 1/2)*24px)
-
-        @media (max-width: $layout-breakpoint-small)
+          height: auto
           width: 100%
 
-        h4
-          margin-bottom: 8px
+        @media (max-width: $layout-breakpoint-small)
+          height: auto
+          width: 100%
+          margin-top: -190px
 
-        p
-          margin-top: 0
-          padding: 0
+  .mint-guide
+    +align-content(center)
+    +align-items(center)
+    +flexbox
+    +justify-content(center)
+    background-color: $secondary
+    box-sizing: border-box
+    min-height: 65px
+    width: 100%
 
-    h2
+    @media (max-width: $layout-breakpoint-small)
+      padding: 16px
+
+    h3
+      +align-content(center)
+      +flex
+      +font-size(18)
       color: $black_80
+      text-align: center
+      text-transform: uppercase
 
-section.orphans .columns .left-column .copy
-  +align-items(center)
+      @media (max-width: $layout-breakpoint-small)
+        +font-size(16)

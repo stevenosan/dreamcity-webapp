@@ -1,0 +1,137 @@
+@import '../mixins/flexbox'
+@import '../vars/variables'
+@import '../mixins/rem_font'
+
+// our team
+#faqs-section
+  +flex(1)
+  +flex-direction(column)
+  +flexbox
+  border-bottom: 1px solid $black_80
+  margin-bottom: 64px
+  padding-bottom: 64px
+
+  .rows
+    +align-content(flex-start)
+    +align-items(flex-start)
+    +flex-direction(row)
+    +flex-wrap(no-wrap)
+    +flexbox
+    +justify-content(flex-start)
+    margin-bottom: 48px
+
+  .columns
+    +flexbox
+    +justify-content(flex-start)
+    +align-items(stretch)
+    +align-content(flex-start)
+
+    .left-column
+      +align-items(center)
+      +flexbox
+      +justify-content(center)
+      box-sizing: border-box
+      margin: 0
+      padding: 0 96px
+      width: 50%
+
+      @media (max-width: $layout-breakpoint-medium)
+        padding: 48px 24px
+
+      @media (max-width: $layout-breakpoint-small)
+        width: 100%
+
+      .copy
+        +align-items(start)
+        +align-self(center)
+        +flex-direction(column)
+        +flexbox
+        +justify-content(center)
+        box-sizing: border-box
+
+        @media (max-width: $layout-breakpoint-medium)
+          padding: 0
+
+        img
+          padding-bottom: 32px
+
+          @media (max-width: $layout-breakpoint-medium)
+            max-width: 65%
+
+        p
+          +font-size(16)
+          line-height: 1.5em
+
+          &.subhead
+            +font-size(21)
+            font-family: $sans_serif_family_extended
+            font-weight: 900
+            text-transform: uppercase
+
+        h2
+          color: $primary
+          text-transform: uppercase
+
+    .right-column
+      +align-items(center)
+      +justify-content(center)
+      +flex(1)
+      +flexbox
+      max-height: 600px
+      overflow: hidden
+      width: 50%
+
+      @media (max-width: $layout-breakpoint-small)
+        width: 100%
+
+      &.image img
+        box-sizing: border-box
+        padding: 64px
+
+        @media (max-width: $layout-breakpoint-medium)
+          padding: 24px
+
+  &.faq
+    padding: 0 96px
+
+    @media (max-width: $layout-breakpoint-medium)
+      padding: 48px 24px
+
+    h2
+      color: $primary
+
+    h3
+      +font-size(16)
+      font-weight: 900
+      margin-bottom: 16px
+      text-transform: uppercase
+
+    p
+      +font-size(16)
+      max-width: 740px
+      min-width: 50%
+
+    .rows
+      +flex-wrap(wrap)
+      +justify-content(flex-start)
+      gap: 24px
+
+      .faq-item
+        +font-size(16)
+        border-bottom: 1px solid $black_80
+        margin: 0 0 48px 0
+        min-height: 180px
+        width: calc(1/3*100% - (1 - 1/3)*24px)
+
+        @media (max-width: $layout-breakpoint-medium)
+          width: 100%
+
+        @media (max-width: $layout-breakpoint-small)
+          width: 100%
+
+        h4
+          margin-bottom: 8px
+
+        p
+          margin-top: 0
+          padding: 0

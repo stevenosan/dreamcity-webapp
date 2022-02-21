@@ -11,9 +11,12 @@ function Intro() {
                 </div>
               </div>
               <div className="right-column">
-                <img src="images/Site_BG.jpg" srcSet="images/Site_BG-p-500.jpeg 500w, images/Site_BG-p-800.jpeg 800w, images/Site_BG-p-1080.jpeg 1080w, images/Site_BG-p-1600.jpeg 1600w, images/Site_BG-p-2000.jpeg 2000w, images/Site_BG-p-2600.jpeg 2600w, images/Site_BG-p-3200.jpeg 3200w, images/Site_BG.jpg 4096w" className="hero-image" />
+                <img src="images/fkd.jpeg" className="hero-image" />
               </div>
             </div>
+{/*            <div className="mint-guide">
+              <h3>new to nfts? We have a mini-guide to help  //  Check it out</h3>
+            </div>*/}
           </section>
     );
   }

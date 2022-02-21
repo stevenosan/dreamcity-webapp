@@ -1,0 +1,80 @@
+@import '../mixins/flexbox'
+@import '../vars/variables'
+@import '../mixins/rem_font'
+
+// roadmap
+#roadmap-section
+  .rows
+    +align-content(flex-start)
+    +align-items(flex-start)
+    +flex-direction(row)
+    +flex-wrap(no-wrap)
+    +flexbox
+    +justify-content(flex-start)
+    margin-bottom: 48px
+
+  &.roadmap
+    padding: 0 96px
+
+    @media (max-width: $layout-breakpoint-medium)
+      padding: 48px 24px
+
+    h2
+      color: $primary
+
+    h3
+      +font-size(16)
+      font-weight: 900
+      margin-bottom: 16px
+      padding-bottom: 8px
+      text-transform: uppercase
+
+    p
+      +font-size(16)
+      max-width: 740px
+      min-width: 50%
+
+    .phase
+      width: 96px
+
+      @media (max-width: $layout-breakpoint-medium)
+        width: 48px
+
+      @media (max-width: $layout-breakpoint-small)
+        width: 48px
+
+    .roadmap-text
+      +font-size(16)
+      box-sizing: border-box
+      padding-left: 24px
+      width: 100%
+
+      ul
+        column-count: 2
+        list-style: none
+        margin: 0 0 24px 0
+        padding: 0
+
+        @media (max-width: $layout-breakpoint-medium)
+          column-count: 1
+
+        @media (max-width: $layout-breakpoint-small)
+          column-count: 1
+
+        li
+          margin: 0
+          padding: 0 0 8px 0
+
+          &::before
+            content: ''
+            background-image: url(../../images/minus.svg)
+            background-size: 16px auto
+            background-repeat: no-repeat
+            display: inline-block
+            height: 16px
+            margin-right: 4px
+            width: 16px
+            vertical-align: middle
+
+          &.completed::before
+            background-image: url(../../images/check.svg)

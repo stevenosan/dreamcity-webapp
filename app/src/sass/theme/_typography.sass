@@ -5,11 +5,13 @@
 // Buttons & Links
 
 a
+  color: $primary
   text-decoration: underline
   text-decoration-color: $primary
 
   &:hover, &:active, &:visited
     color: $primary
+    text-decoration-color: $primary
 
 // Typography
 
@@ -18,8 +20,8 @@ form, input, textarea, submit
   +font-size(14)
 
 h1, h2, h3, h4, h5, h6, strong
-  font-family: $sans_serif_family
-  font-weight: 900
+  font-family: $sans_serif_family_extended
+  font-weight: 800
   margin: 0
   padding: 0
 
@@ -31,17 +33,17 @@ h1
   text-transform: uppercase
 
   @media (max-width: $layout-breakpoint-medium)
-    +font-size(56)
-    line-height: 3.5rem
+    +font-size(38)
+    line-height: 2.5rem
 
 h2
   +font-size(32)
 
   @media (max-width: $layout-breakpoint-medium)
-    +font-size(24)
+    +font-size(28)
 
   @media (max-width: $layout-breakpoint-small)
-    +font-size(18)
+    +font-size(24)
 
 h3
   +font-size(24)

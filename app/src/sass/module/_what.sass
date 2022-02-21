@@ -1,0 +1,22 @@
+@import '../mixins/flexbox'
+@import '../vars/variables'
+@import '../mixins/rem_font'
+
+// what
+#what-section
+  .columns
+    @media (max-width: $layout-breakpoint-small)
+      +flex-direction(reverse)
+
+    .left-column
+      @media (max-width: $layout-breakpoint-small)
+        padding: 24px
+
+    .right-column
+      @media (max-width: $layout-breakpoint-small)
+        margin-top: 0
+
+      img
+        @media (max-width: $layout-breakpoint-small)
+          width: 100%
+          padding: 24px

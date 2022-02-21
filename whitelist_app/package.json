@@ -1,0 +1,20 @@
+{
+  "name": "whitelist_app",
+  "version": "1.0.0",
+  "description": "App that takes a ledger address and list of WL wallets, creates token, distributes token to wallets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dream City NFT",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^9.0.0",
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.16",
+    "typescript": "^4.5.5"
+  }
+}

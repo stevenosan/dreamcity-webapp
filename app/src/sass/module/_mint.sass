@@ -12,9 +12,11 @@
     @media (max-width: $layout-breakpoint-small)
       display: none
 
-.MuiContainer-root, .MuiContainer-maxWidthLg, .MuiContainer-maxWidthXs
-  margin: 0 !important
-  padding: 0 !important
+#candymachine
+  >.MuiContainer-root
+    margin: 0 0 64px 96px
+    padding: 0
 
-  .MuiPaper-root
-    margin: 0px 0 64px 96px
+    .MuiContainer-maxWidthLg, .MuiContainer-maxWidthXs
+      margin: 0
+      padding: 0

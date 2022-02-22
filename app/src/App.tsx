@@ -18,9 +18,9 @@ class App extends React.Component {
       <What />
       <Process />
       <Mint />
+      <section id="candymachine"></section>
       <OurTeam />
       <Roadmap />
-      <section id="candymachine"></section>
       <Faqs />
     </main>);
   }

@@ -8,20 +8,48 @@ import Orphans from './pages/orphans/Orphans';
 import Roadmap from './pages/roadmap/Roadmap';
 import OurTeam from './pages/our-team/OurTeam';
 import Faqs from './pages/faqs/Faqs';
+import React from 'react';
 
-function App() {
-  return (
-    <main>
+class App extends React.Component {
+  render() {
+    return (    <main>
       <NavBar />
       <Intro />
       <What />
       <Process />
       <Mint />
+      <section id="candymachine"></section>
       <OurTeam />
       <Roadmap />
       <Faqs />
-    </main>
-  );
+    </main>);
+  }
+
+  componentDidMount() {
+    const script = document.createElement("script");
+
+    script.src = "candy-machine.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+  }
 }
+
+// function App() {
+
+//   return (
+//     <main>
+//       <NavBar />
+//       <Intro />
+//       <What />
+//       <Process />
+//       <Mint />
+//       <OurTeam />
+//       <Roadmap />
+//       <Faqs />
+//       <div id="candymachine"></div>
+//     </main>
+//   );
+// }
 
 export default App;

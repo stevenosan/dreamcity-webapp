@@ -19,9 +19,6 @@ function NavBar() {
               <a href="#process-section" className="list-link">The Process</a>
             </li>
             <li className="nav-item">
-              <a href="#mint-section" className="list-link">Mint Details</a>
-            </li>
-            <li className="nav-item">
               <a href="#ourteam-section" className="list-link">The Team</a>
             </li>
             <li className="nav-item">

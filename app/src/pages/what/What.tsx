@@ -14,7 +14,6 @@ function What() {
                 <p>The NFT is the access to play in the sandbox and contribute to the comic anthology.</p>
                 <p className="subhead">ok Cool. but I’m not a writer or an artist though?</p>
                 <p>No problem, even if you just have an idea we have writers and artists to help bring your idea to life. All you need is an active imagination. Keep scrolling to see the process below.</p>
-                <a href="#mint-section" className="button-primary">I don't care, wen mint?</a>
               </div>
             </div>
           </div>

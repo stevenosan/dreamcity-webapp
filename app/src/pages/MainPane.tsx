@@ -1,7 +1,14 @@
 function MainPane()
 {
     return(
-        <div>hello world</div>
+        <div>
+            {/* <Intro />
+            <What />
+            <Process />
+            <OurTeam />
+            <Roadmap />
+            <Faqs /> */}
+        </div>
         );
 }
 

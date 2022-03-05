@@ -19,8 +19,8 @@ class App extends React.Component {
       <NavBar />
       <Router>
         <Routes>
-          <Route path="/"><MainPane /></Route>
-          <Route path="/lorestart"><LoreStart /></Route>
+          <Route path="/" element={< Home/>} />
+          <Route path="/lorestart" element={< LoreStart/>} />
         </Routes>
       </Router>
     </main>

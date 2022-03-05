@@ -31,10 +31,10 @@ function NavBar() {
           <h3>World //////</h3>
           <ul className="main-nav">
             <li className="nav-item">
-              Coming Soon:
+              <a href="/lorestart" className="list-link"> Lore </a>
             </li>
             <li className="nav-item">
-              Lore
+              Coming Soon:
             </li>
             <li className="nav-item">
               Comics

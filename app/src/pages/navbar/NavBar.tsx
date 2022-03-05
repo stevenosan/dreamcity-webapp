@@ -13,19 +13,19 @@ function NavBar() {
           <h3>Project //////</h3>
           <ul className="main-nav">
             <li className="nav-item">
-              <a href="#what-section" className="list-link">The What</a>
+              <a href="/#what-section" className="list-link">The What</a>
             </li>
             <li className="nav-item">
-              <a href="#process-section" className="list-link">The Process</a>
+              <a href="/#process-section" className="list-link">The Process</a>
             </li>
             <li className="nav-item">
-              <a href="#ourteam-section" className="list-link">The Team</a>
+              <a href="/#ourteam-section" className="list-link">The Team</a>
             </li>
             <li className="nav-item">
-              <a href="#roadmap-section" className="list-link">Roadmap</a>
+              <a href="/#roadmap-section" className="list-link">Roadmap</a>
             </li>
             <li className="nav-item">
-              <a href="#faqs-section" className="list-link">FAQs</a>
+              <a href="/#faqs-section" className="list-link">FAQs</a>
             </li>
           </ul>
           <h3>World //////</h3>

@@ -1,16 +1,20 @@
 function LoreStart() {
     return(
         <section id="lore-start">
-            <div className="columns">
-              <div className="left-column hero">
-                <div className="copy">
-                  <h1>Welcome to Lore Start</h1>
-                  <p>This is where the lore goes.</p>
-                </div>
-              </div>
-              <div className="right-column">
-                <img src="images/fkd.jpeg" className="hero-image" />
-              </div>
+            <div>Lore</div>
+
+            <div className="column">
+                <div>Wanna contribute to the lore & change dream city? // </div> <div>Learn More</div>
+            </div>
+            
+            <div>Dream City</div>
+            <div className="grid-wrapper">
+                <div>Begin Here</div>
+                <div>Districts</div>
+                <div>Gangs</div>
+                <div>Megacorps</div>
+                <div>Notable People</div>
+                <div>Drugs</div>
             </div>
           </section>
     );
